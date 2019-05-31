@@ -32,7 +32,7 @@ aio-api-list {
   display: flex;
   margin: 0 auto;
 
-  @media (max-width: 600px) {
+  @media (width <= 600px) {
       flex-direction: column;
       margin: 16px auto;
   }
@@ -53,9 +53,9 @@ aio-api-list {
   max-width: 1100px;
   margin: 0;
 
-  @media handheld and (max-width: $phone-breakpoint),
-  screen and (max-device-width: $phone-breakpoint),
-  screen and (max-width: $tablet-breakpoint) {
+  @media handheld and (width <= $phone-breakpoint),
+  screen and (device-width <= $phone-breakpoint),
+  screen and (width <= $tablet-breakpoint) {
     padding: 24px 0 0;
   }
 }
@@ -165,7 +165,7 @@ aio-api-list {
   padding: 0;
   overflow: hidden;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (width <=  600px) {
         margin: 0 0 0 -8px;
     }
 
@@ -303,7 +303,7 @@ p {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (width <=  600px) {
   .docs-content {
     // Overrides display flex from angular material.
     // This was added because Safari doesn't play nice with layout="column".

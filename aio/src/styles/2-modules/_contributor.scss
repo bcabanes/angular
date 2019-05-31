@@ -1,11 +1,11 @@
 aio-contributor-list {
-  @media handheld and (max-width: 480px), screen and (max-width: 480px), screen and (max-width: 900px) {
+  @media handheld and( width <=  : 480px), screen and( width <=  : 480px), screen and( width <=  : 900px) {
     .grid-fluid{
       width: auto;
     }
   }
 
-  @media handheld and (max-width: 480px), screen and (max-width: 480px), screen and (max-width: 900px) {
+  @media handheld and( width <=  : 480px), screen and( width <=  : 480px), screen and( width <=  : 900px) {
     .grid-fluid{
       margin-left: 20px;
       margin-right: 20px;

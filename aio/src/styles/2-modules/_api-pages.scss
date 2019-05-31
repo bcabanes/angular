@@ -21,7 +21,7 @@
       // This is overriding a style here:
       // https://github.com/angular/angular/blob/95993e1/aio/src/styles/2-modules/_table.scss#L58-L62
       tbody > tr > td tr td:first-child {
-        @media screen and (max-width: 480px) {
+        @media screen and (width <=  480px) {
           background-color: inherit;
         }
       }
@@ -56,7 +56,7 @@
         box-shadow: none;
 
         tr {
-          @media screen and (max-width: 480px) {
+          @media screen and (width <=  480px) {
             display: flex;
             flex-direction: column;
           }
@@ -105,7 +105,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (width <=  600px) {
     flex-direction: column;
     align-items: flex-start;
   }

@@ -22,13 +22,13 @@
   height: 0;
 }
 
-@media handheld and (max-width: 480px), screen and (max-width: 480px), screen and (max-width: 900px) {
+@media handheld and( width <=  : 480px), screen and( width <=  : 480px), screen and( width <=  : 900px) {
   .grid-fixed {
     width: auto;
   }
 }
 
-@media handheld and (max-width: 480px), screen and (max-width: 480px), screen and (max-width: 900px) {
+@media handheld and( width <=  : 480px), screen and( width <=  : 480px), screen and( width <=  : 900px) {
   .grid-fixed .c3, .grid-fixed .c8 {
     margin-left: 20px;
     margin-right: 20px;
@@ -38,7 +38,7 @@
   }
 }
 
-@media handheld and (max-width: 480px), screen and (max-width: 480px), screen and (max-width: 480px) {
+@media handheld and( width <=  : 480px), screen and( width <=  : 480px), screen and( width <=  : 480px) {
   .grid-fixed .c3, .grid-fixed .c8 {
     margin-left: 0px;
     margin-right: 0px;
@@ -48,7 +48,7 @@
   }
 }
 
-@media handheld and (max-width: 900px), screen and (max-width: 900px) {
+@media handheld and( width <=  : 900px), screen and( width <=  : 900px) {
   /* line 6, ../scss/_responsive.scss */
   .grid-fixed{
     margin: 0 auto;
@@ -67,7 +67,7 @@
   }
 }
 
-@media handheld and (max-width: 480px), screen and (max-width: 480px) {
+@media handheld and( width <=  : 480px), screen and( width <=  : 480px) {
   /* line 6, ../scss/_responsive.scss */
   .grid-fixed {
     margin: 0 auto;
@@ -211,7 +211,7 @@ aio-resource-list {
     transform: translateY(-2px);
   }
 
-  @media(max-width: 900px) {
+  @media (width <=  900px) {
     .c-resource-nav {
       display: none;
     }

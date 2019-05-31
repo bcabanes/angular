@@ -24,7 +24,7 @@ mat-toolbar.mat-toolbar {
 aio-shell.page-home mat-toolbar.mat-toolbar {
   background-color: $blue;
 
-  @media (min-width: 481px) {
+  @media (width >= 481px) {
     &:not(.transitioning) {
       background-color: transparent;
       transition: background-color 0.2s linear;
@@ -40,7 +40,7 @@ aio-shell.page-resources mat-toolbar.mat-toolbar {
   box-shadow: none;
 
   // FIXED TOPNAV TOOLBAR FOR SMALL MOBILE
-  @media (min-width: 481px) {
+  @media (width >= 481px) {
     position: absolute;
   }
 }
@@ -52,7 +52,7 @@ aio-shell.folder-docs mat-toolbar.mat-toolbar,
 aio-shell.folder-getting-started mat-toolbar.mat-toolbar,
 aio-shell.folder-guide mat-toolbar.mat-toolbar,
 aio-shell.folder-tutorial mat-toolbar.mat-toolbar {
-  @media (min-width: 992px) {
+  @media (width >= 992px) {
     .hamburger.mat-button {
       // Hamburger shown on non-marketing pages on large screens.
       margin: $hamburgerShownMargin;
@@ -66,13 +66,13 @@ aio-shell.folder-tutorial mat-toolbar.mat-toolbar {
   margin: $hamburgerShownMargin;
   padding: 0;
 
-  @media (min-width: 992px) {
+  @media (width >= 992px) {
     // Hamburger hidden by default on large screens.
     // (Will be shown per doc.)
     margin: $hamburgerHiddenMargin;
   }
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     min-width: 15%;
   }
 
@@ -98,7 +98,7 @@ aio-shell.folder-tutorial mat-toolbar.mat-toolbar {
   margin: 0 16px 0 0;
   padding: 21px 0;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (width <=  480px) {
     margin-right: 8px;
   }
 
@@ -108,7 +108,7 @@ aio-shell.folder-tutorial mat-toolbar.mat-toolbar {
     top: 12px;
     height: 40px;
 
-    @media (max-width: 992px) {
+    @media (width <= 992px) {
       &:hover {
         transform: scale(1.1);
       }
@@ -199,7 +199,7 @@ aio-search-box.search-container {
         width: 50%;
       }
     }
-    @media (max-width: 480px) {
+    @media (width <= 480px) {
       width: 150px;
     }
   }
@@ -217,7 +217,7 @@ aio-search-box.search-container {
       align-items: center;
       margin-left: 16px;
 
-      @media screen and (max-width: 480px) {
+      @media screen and (width <=  480px) {
         margin-left: 8px;
       }
 

@@ -43,7 +43,7 @@ table {
       line-height: 24px;
       vertical-align: top;
 
-      @media (max-width: 480px) {
+      @media (width <= 480px) {
         &:before {
           // content: **ADD TABLE HEADER**;
           display: inline-block;
@@ -56,7 +56,7 @@ table {
       letter-spacing: 0.30px;
 
       tr td:first-child {
-        @media (max-width: 480px) {
+        @media (width <= 480px) {
           background-color: $lightgray;
         }
       }
@@ -74,7 +74,7 @@ table {
     &:last-child td {
       border: none;
 
-      @media (max-width: 480px) {
+      @media (width <= 480px) {
         border-bottom: 1px solid $lightgray;
       }
     }
@@ -87,7 +87,7 @@ table {
     overflow: auto;
   }
 
-  @media only screen and (max-width: 990px) {
+  @media only screen and( width <=  : 990px) {
 
     /* Force table to not be like tables anymore */
     table, thead, tbody, tfoot, tr, th, td {

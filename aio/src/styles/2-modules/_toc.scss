@@ -9,7 +9,7 @@
 }
 
 aio-toc.embedded {
-  @media (min-width: 801px) {
+  @media (width >= 801px) {
     display: none;
   }
 
@@ -111,7 +111,7 @@ aio-toc.embedded {
     margin: 0;
     padding: 0 8px 0 0;
 
-    @media (max-width: 800px) {
+    @media (width <= 800px) {
       width: auto;
     }
 
